@@ -1,13 +1,26 @@
-let buttons = document.querySelectorAll('.icon-plus');
+let plusIcons = document.querySelectorAll('.icon-plus');
+let minusIcons = document.querySelectorAll('.icon-minus');
 let pTags = document.querySelectorAll('p')
 
-const openCloseAccordion = (index)=>{
-    pTags[index].classList.toggle('reveal-text')
+
+const openClosePlusIcon = (index)=>{
+    pTags[index].classList.toggle('reveal-text');
+    plusIcons[index].style.display = 'none'
+    minusIcons[index].style.display = 'inline'
+
 }
 
+const openCloseMinusIcon = (index)=>{
+    pTags[index].classList.toggle('reveal-text');
+    minusIcons[index].style.display = 'none'
+    plusIcons[index].style.display = 'inline'
 
-buttons.forEach((button, index) => {
-    button.addEventListener('click', ()=> openCloseAccordion(index))
+}
+
+plusIcons.forEach((plusIcon, index) => {
+    plusIcon.addEventListener('click', ()=> openClosePlusIcon(index))
 });
 
-
+minusIcons.forEach((minusIcon, index) => {
+    minusIcon.addEventListener('click', ()=> openCloseMinusIcon(index))
+});
