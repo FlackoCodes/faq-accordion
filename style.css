@@ -19,6 +19,13 @@ body{
 }
 
 
+
+h3:hover{
+    cursor: pointer;
+    color: #B15EFF;
+}
+
+
 .container{
     background-color: white;
     border-radius: 5px;
