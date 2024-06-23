@@ -61,12 +61,12 @@ img, svg{
 
 .reveal-text{
     max-height: 300px;
-    transition: max-height ease-in-out 2s;
+    /* transition: max-height ease-in-out 2s; */
 }
 
 p{
     max-height: 0;
-    transition: max-height ease-in-out 1s;
+    /* transition: max-height ease-in-out 1s; */
     overflow: hidden;
     margin-bottom: 0.5rem;
 } 
